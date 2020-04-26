@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>排名展示</title>
+</head>
+<body>
+    <table border="1">
+        <tr>
+            <th>排名</th>
+            <th>客户端</th>
+            <th>分数</th>
+        </tr>
+        {% for rank in rank %}
+        <tr>
+            <td>{{ rank.ranknum }}</td>
+            <td>{{ rank.uname }}</td>
+            <td>{{ rank.score }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
